@@ -9,6 +9,8 @@ class Receiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {
         val sender1 = intent?.getStringExtra("sender")
+        val actionString= intent?.action
         Log.d("kajal", "onReceive:$sender1")
+        Log.d("kajal", "onReceive:$actionString")
     }
 }

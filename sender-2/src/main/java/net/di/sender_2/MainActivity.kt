@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent()
         intent.action = "net.di.receiver_1"
         intent.putExtra("sender", "sender_2")
-        intent.component = ComponentName("net.di.receiver_1", "net.di.receiver_1.MainActivity")
+        intent.component = ComponentName("net.di.receiver_1", "net.di.receiver_1.Receiver")
         sendBroadcast(intent)
     }
 }
